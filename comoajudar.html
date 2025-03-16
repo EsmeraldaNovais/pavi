@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAVI</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="efeito.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="consulta.jsp" class="logo"> <img src="imagem/pavi50.png" alt="protetores"> P.A.V.I</a>
+            <button class="navmenu"></button>
+            <ul class="nav-list">
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="adote.html">Adote</a></li>
+                <li><a href="comoajudar.html">Como ajudar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="ajuda">
+            <p>🐾Você pode salvar e transformar a vida de muitos animais! Ajude nossa causa com uma doação, seja em dinheiro, ração, cobertores, roupinhas ou oferecendo seu tempo como voluntário. Juntos, podemos fazer a diferença e dar uma nova chance a esses animais!🐾</p>
+        </div>
+
+        <div class="ajuda">
+            <img src="imagem/pavi150.png" alt="pavi" class="animais"> 
+            <h2>Como Suas Doações Ajudam</h2>
+            <p>Cada doação faz a diferença! Com seu apoio, podemos:</p>
+            <p>🐾 Alimentar os animais resgatados;</p>
+            <p>🐈 Fornecer abrigo seguro e confortável, com cobertores e roupinhas;</p>
+            <p>🐾 Garantir cuidados médicos, como vacinas, tratamentos e castrações;</p>
+            <p>🐈 Proporcionar amor e carinho, enquanto buscamos um lar definitivo para eles.</p>
+            <a href="#doar" class="botao-btn">Doe Agora</a>
+        </div>
+
+        <div class="voluntariado">
+            <h2>Existem outras formas de ajudar</h2>
+            <img src="imagem/voluntario250.jpg" alt="pessoas">
+            <p>
+                Seja voluntário e ajude a transformar vidas! <br>
+                Com pequenos gestos, você pode fazer uma grande diferença, <br>
+                além de aprender novas habilidades e impactar positivamente sua comunidade. <br>
+                Junte-se a nós e contribua para um mundo melhor!
+            </p>
+            <h2>Como um voluntário pode ajudar:</h2>
+            Auxiliar em tarefas diárias.<br>
+            Divulgar a causa nas redes sociais.<br>
+            Participar de campanhas de arrecadação.<br>
+            Oferecer lar temporário.<br>
+            Caronas solidárias.<br>
+            <a href="#form" class="botao-btn">Seja um voluntário</a>
+        </div>
+
+        <div id="doar">
+            <h2>Dados Bancários</h2>
+            <p><strong>Banco:</strong> XXXXX</p>
+            <p><strong>Agência:</strong> XXXXX</p>
+            <p><strong>Conta Corrente:</strong> XXXXX</p>
+            <p><strong>PIX:</strong> XXXXX</p>
+            <p>Suas doações nos ajudam a salvar vidas! Doe agora e faça parte dessa missão.</p>
+        </div>
+        
+        <div id = form>
+            <div class="container-formulario">
+                <picture>
+                    <source srcset="imagem/capa_p.jpg" media="(max-width: 768px)">
+                    <img src="imagem/capa_g.jpg">
+                </picture>
+                <form action="grava.jsp" method="post" class="formulario-voluntariado">
+                    <h2>Formulário de Voluntariado</h2>
+
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="txtnome" placeholder="Digite seu nome">
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="txtemail" placeholder="Digite seu e-mail" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+            
+                    <label for="ajuda">Como você pode ajudar?</label>
+                    <select id="ajuda" name="ajuda" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="auxiliar">Auxiliar em tarefas diárias</option>
+                        <option value="divulgar">Divulgar a causa nas redes sociais</option>
+                        <option value="campanhas">Participar de campanhas de arrecadação</option>
+                        <option value="lar-temporario">Oferecer lar temporário</option>
+                        <option value="caronas">Caronas solidárias</option>
+                    </select>
+            
+                    
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            PAVI<br>
+            Instagram: @paviprotetores<br>
+            Contato: (11) 96770-5764.
+        </p>
+    </footer>
+</body>
+</html>
